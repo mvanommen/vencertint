@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="CertDB" max_length="40" name="x_153963_certifica_certdb" type="collection">
+        <element label="City" mandatory="true" max_length="32" name="city" type="string"/>
+        <element display="true" label="Common Name" mandatory="true" max_length="64" name="common_name" type="string"/>
+        <element default="United States" label="Country" max_length="32" name="country" type="string"/>
+        <element label="Distinguished Name" max_length="64" name="distinguished_name" type="string"/>
+        <element label="Organization" mandatory="true" max_length="64" name="organization" type="string"/>
+        <element label="Organizational Unit" mandatory="true" max_length="64" name="organizational_unit" type="string"/>
+        <element label="Serial Number" max_length="64" name="serial" type="string"/>
+        <element label="State" max_length="32" name="state" type="string"/>
+        <element label="VUID" max_length="20" name="vuid" type="integer"/>
+    </element>
+</database>
