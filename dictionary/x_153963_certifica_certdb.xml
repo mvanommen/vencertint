@@ -4,11 +4,29 @@
         <element label="City" mandatory="true" max_length="32" name="city" type="string"/>
         <element display="true" label="Common Name" mandatory="true" max_length="64" name="common_name" type="string"/>
         <element default="United States" label="Country" max_length="32" name="country" type="string"/>
+        <element label="Description" max_length="400" name="description" type="string"/>
         <element label="Distinguished Name" max_length="64" name="distinguished_name" type="string"/>
+        <element label="Installation Team" mandatory="true" max_length="32" name="installation_team" reference="sys_user_group" type="reference"/>
+        <element choice="3" default="Manual" label="Installation Type" mandatory="true" max_length="20" name="installation_type" type="choice">
+            <choice>
+                <element label="Automatic" value="Automatic"/>
+                <element label="Manual" value="Manual"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Justification" mandatory="true" max_length="400" name="justification" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Organization" mandatory="true" max_length="64" name="organization" type="string"/>
         <element label="Organizational Unit" mandatory="true" max_length="64" name="organizational_unit" type="string"/>
+        <element label="Requestor Group" mandatory="true" max_length="32" name="requestor_group" reference="sys_user_grmember" type="reference"/>
         <element label="Serial Number" max_length="64" name="serial" type="string"/>
         <element label="State" max_length="32" name="state" type="string"/>
+        <element label="Subject Alternate Names" max_length="64" name="subject_alternate_names" type="string"/>
         <element label="VUID" max_length="20" name="vuid" type="integer"/>
+        <index name="index">
+            <element name="installation_team"/>
+        </index>
+        <index name="index2">
+            <element name="requestor_group"/>
+        </index>
     </element>
 </database>

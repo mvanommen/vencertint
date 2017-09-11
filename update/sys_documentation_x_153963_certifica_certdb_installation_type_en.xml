@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="installation_type" label="Installation Type" language="en" table="x_153963_certifica_certdb">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>installation_type</element>
+            <help/>
+            <hint/>
+            <label>Installation Type</label>
+            <language>en</language>
+            <name>x_153963_certifica_certdb</name>
+            <plural>Installation Types</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-09-11 15:28:08</sys_created_on>
+            <sys_id>9e9b66430f4103006b2d86bce1050e9e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Installation Type</sys_name>
+            <sys_package display_value="certificates" source="x_153963_certifica">62a682350f0103006b2d86bce1050e0f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="certificates">62a682350f0103006b2d86bce1050e0f</sys_scope>
+            <sys_update_name>sys_documentation_x_153963_certifica_certdb_installation_type_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-09-11 15:28:08</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
